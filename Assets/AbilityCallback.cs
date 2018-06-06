@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 public class AbilityCallback{
@@ -6,11 +7,11 @@ public class AbilityCallback{
 	private List<Type> paramTypeList;
 	private Delegate callback;
 
-	public setAbilityCallback(Delegate delegate){
-		callback = delegate;
+	public void setAbilityCallback(Delegate cb){
+		callback = cb;
 	}
 	
-	public fireCallback(){
+	public void fireCallback(){
 		
 	}
 }

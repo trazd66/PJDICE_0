@@ -15,27 +15,25 @@ public class Cube_rotation : MonoBehaviour{
 		TouchKit.addGestureRecognizer( swipeRecognizer );
 	}
 	
-	// Update is called once per frame
-	// a good guide on rotations
-	// https://gamedev.stackexchange.com/questions/136174/im-rotating-an-object-on-two-axes-so-why-does-it-keep-twisting-around-the-thir
+	/* Update is called once per frame
+	 * a good guide on rotations
+	 * https://gamedev.stackexchange.com/questions/136174/im-rotating-an-object-on-two-axes-so-why-does-it-keep-twisting-around-the-thir
+	 */
 	void Update () {
 			//detected a swipe
 		if(swipeRecognizer.completedSwipeDirection == TKSwipeDirection.Left){
-			Quaternion targetRotation =Quaternion.AngleAxis(90f,Vector3.up) * this.transform.rotation; // the order of these multiplications matter
+			Quaternion targetRotation = Quaternion.AngleAxis(90f,Vector3.up) * this.transform.rotation; // the order of these multiplications matter
 			StartCoroutine(rotateOverTime(this.transform.rotation,targetRotation,rotationFactor));
 			swipeRecognizer.resetSwipeDirection();
-		}
-		if(swipeRecognizer.completedSwipeDirection == TKSwipeDirection.Right){
-			Quaternion targetRotation =Quaternion.AngleAxis(90f,Vector3.down) * this.transform.rotation;
+		} else if(swipeRecognizer.completedSwipeDirection == TKSwipeDirection.Right){
+			Quaternion targetRotation = Quaternion.AngleAxis(90f,Vector3.down) * this.transform.rotation;
 			StartCoroutine(rotateOverTime(this.transform.rotation,targetRotation,rotationFactor));
 			swipeRecognizer.resetSwipeDirection();
-		}
-		if(swipeRecognizer.completedSwipeDirection == TKSwipeDirection.Up){
+		} else if(swipeRecognizer.completedSwipeDirection == TKSwipeDirection.Up){
 			Quaternion targetRotation = Quaternion.AngleAxis(90f,Vector3.right) * this.transform.rotation;
 			StartCoroutine(rotateOverTime(this.transform.rotation,targetRotation,rotationFactor));
 			swipeRecognizer.resetSwipeDirection();	
-		}
-		if(swipeRecognizer.completedSwipeDirection == TKSwipeDirection.Down){
+		} else if(swipeRecognizer.completedSwipeDirection == TKSwipeDirection.Down){
 			Quaternion targetRotation = Quaternion.AngleAxis(90f,Vector3.left) * this.transform.rotation;
 			StartCoroutine(rotateOverTime(this.transform.rotation,targetRotation,rotationFactor));
 			swipeRecognizer.resetSwipeDirection();	

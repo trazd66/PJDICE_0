@@ -2,9 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CardCollection {
 // our database for cards
+public class CardCollection {
+
 	/*the complete list of cards in game */
 	private static List<Card> CardList;
+
+	public CardCollection() {
+		
+	}
 
 }

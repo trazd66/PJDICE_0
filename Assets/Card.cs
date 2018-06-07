@@ -17,6 +17,8 @@ public class Card {
 
 	private int position;
 
+	/* The list of callback functions of the card. */
+
 	private List<AbilityCallback> _abilityCallbackList;
 
 	private RequirementCallback _requirement;
@@ -25,7 +27,7 @@ public class Card {
 
 	/*construct a new card */
 	public Card(string name, int identifier){
-		this.name = name;
+		setName(name);
 		this._identifier = identifier;
 	}
 
@@ -50,5 +52,19 @@ public class Card {
 		}
 	}
 
-	
+		public void setName(string newName) {
+		name = newName;
+	}
+
+	public string getName() {
+		return name;
+	}
+
+	public void setDescription(string newDescription) {
+		description = newDescription;
+	}
+
+	public string getDescription() {
+		return description;
+	}
 }

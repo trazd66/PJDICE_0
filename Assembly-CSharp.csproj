@@ -51,10 +51,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\AbilityCallback.cs" />
+     <Compile Include="Assets\Callback.cs" />
      <Compile Include="Assets\Card.cs" />
      <Compile Include="Assets\CardCollection.cs" />
      <Compile Include="Assets\Cube_rotation.cs" />
+     <Compile Include="Assets\GameEvent.cs" />
      <Compile Include="Assets\TouchKit\Helpers\TKRect.cs" />
      <Compile Include="Assets\TouchKit\Helpers\TKTouch.cs" />
      <Compile Include="Assets\TouchKit\Helpers\TouchKitEditorSupport.cs" />

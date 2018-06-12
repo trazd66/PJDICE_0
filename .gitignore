@@ -1,3 +1,4 @@
+Library/
 Library/**
 [Tt]emp/
 [Oo]bj/
@@ -23,6 +24,7 @@ ExportedObj/
 *.svd
 *.pdb
 *.opendb
+*.cs.meta
 
 # Unity3D generated meta files
 *.pidb.meta

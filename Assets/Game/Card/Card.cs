@@ -4,7 +4,12 @@ using UnityEngine;
 
 public abstract class Card :OnDieObj{
 
-	/* The list of callback functions of the card. */
+	/* The list of callback functions of the public void  */
+	private CardType type;
+	private Rarity rarity;
+	private bool collectible = true;
+	private CardSet cardSet;
+
 
 	private List<AbilityCallback> _abilityCallbackList;
 
@@ -39,5 +44,29 @@ public abstract class Card :OnDieObj{
 		}
 	}
 
+	public  Card(CardDesc desc){
+		this.setName(desc.name);
+		this.setID(desc.id);
+		this.setDescription(desc.description);
+		this.type = desc.type;
+		this.rarity = desc.rarity;
+		this.collectible = desc.collectible;
+		this.cardSet = desc.set;
+	}
+
+	public void setRarity(Rarity rarity){
+		this.rarity = rarity;
+	}
+
+	public void setcollectible(bool collectible){
+		this.collectible = collectible;
+	}
+	public void setCardset(CardSet cardSet){
+		this.cardSet = cardSet;
+	}
+
+	public void setCardType(CardType type){
+		this.type = type;
+	}
 
 }

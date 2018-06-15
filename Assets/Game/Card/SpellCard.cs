@@ -6,4 +6,6 @@ public class SpellCard : Card{
     public SpellCard(string name, int identifier) :base(name,identifier){
 
     }
+
+
 }

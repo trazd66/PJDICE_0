@@ -11,7 +11,7 @@ public class SiegeConstruct: Construct{
 
    private bool isAOEDmaage;
 
-   private MultiTarget targets;
+
 
    public void setDamage(int damage){
        this.damage = damage;

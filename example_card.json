@@ -1,0 +1,15 @@
+{
+    "id": 0,
+    "name": "sample",
+    "description": "this is a sample card",
+    "type": 1,
+    "rarity": 1,
+    "collectible": true,
+    "set": 1,
+    "damage": 1,
+    "hp": 10,
+    "movesPerTurn": 1,
+    "targetAOEtype": 2,
+    "numOfTargets": 1,
+    "turnsToBuild": 2
+}

@@ -5,6 +5,7 @@ using UnityEngine;
 public abstract class Construct : OnDieObj {
 		/* The list of callback functions of the card. */
 	private bool isBuilt;
+	
 	private int turnsWaiting;
 
 	public bool isConstructBUilt(){

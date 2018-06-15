@@ -1,9 +1,6 @@
 
 public enum AOEtype{
-	Linear = ( 1 << 0 ),
-	Circular = (1 << 1)
-}
-public struct MultiTarget{
-	public AOEtype aoeType;
-	public int numOfTargets;
+	SINGLE = (1 << 0),
+	LINEAR = ( 1 << 1 ),
+	CIRCULAR = (1 << 2)
 }

@@ -252,7 +252,7 @@ public class TKSwipeRecognizer : TKAbstractGestureRecognizer
 		}
 	}
 
-	internal void resetSwipeDirection()
+	public void resetSwipeDirection()
 	{
 		completedSwipeDirection = TKSwipeDirection.Reset;
 	}

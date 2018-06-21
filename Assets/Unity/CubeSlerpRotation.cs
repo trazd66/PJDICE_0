@@ -25,7 +25,6 @@ public class Cube_rotation : MonoBehaviour{
 			Quaternion targetRotation = Quaternion.AngleAxis(90f,Vector3.up) * this.transform.rotation; // the order of these multiplications matter
 			StartCoroutine(rotateOverTime(this.transform.rotation,targetRotation,rotationFactor));
 			swipeRecognizer.resetSwipeDirection();
-			ConstructCardDesc.saveInstance();
 		} else if(swipeRecognizer.completedSwipeDirection == TKSwipeDirection.Right){
 			Quaternion targetRotation = Quaternion.AngleAxis(90f,Vector3.down) * this.transform.rotation;
 			StartCoroutine(rotateOverTime(this.transform.rotation,targetRotation,rotationFactor));

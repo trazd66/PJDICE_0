@@ -19,7 +19,6 @@ public abstract class CardDesc{
     public int id;
 	public string name;
 	public string description;
-	
 	public CardType type;
 	public Rarity rarity;
 	public bool collectible = true;

@@ -1,8 +1,6 @@
 using System.IO;
 using UnityEngine;
 public  class ConstructCardDesc : CardDesc{
-    public int damage;
-
     public int hp;
     
     public int movesPerTurn;
@@ -27,7 +25,6 @@ public  class ConstructCardDesc : CardDesc{
             rarity = Rarity.COMMON,
             collectible = true,
             set = CardSet.BASIC,
-            damage = 1,
             hp = 10,
             movesPerTurn = 1,
             targetAOEtype = AOEtype.LINEAR,

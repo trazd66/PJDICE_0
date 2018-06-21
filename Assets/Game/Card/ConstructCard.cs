@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ConstructCard : Card{
-    private int damage;
 
     private int hp;
     
@@ -17,7 +16,6 @@ public class ConstructCard : Card{
 
     }
     public ConstructCard(ConstructCardDesc desc):base(desc){
-        this.damage = desc.damage;
         this.hp = desc.hp;
         this.movesPerTurn = desc.movesPerTurn;
         this.targetAOEtype = desc.targetAOEtype;
@@ -25,9 +23,6 @@ public class ConstructCard : Card{
         this.turnsToBuild = desc.turnsToBuild;
     }
 
-    public void setDamage(int damage){
-		this.damage = damage;
-	}
 
     public void setHp(int hp){
         this.hp = hp;
@@ -43,6 +38,10 @@ public class ConstructCard : Card{
     }
 	public void setTurnsTobuild(int turnsToBuild){
         this.turnsToBuild = turnsToBuild;
+    }
+
+    public  Construct build(){
+        return null;
     }
 
 }

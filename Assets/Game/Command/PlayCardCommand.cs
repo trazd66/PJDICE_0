@@ -1,6 +1,4 @@
-public class UtilFunctionCommand : Command{
-    
-    
+public class PlayCardCommand:Command{
     public void execute(){
 
     }

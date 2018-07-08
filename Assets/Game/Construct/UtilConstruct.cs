@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class UtilConstruct : Construct{
     public UtilFunctionCommand play(){
+    
         return null;
     }
 }

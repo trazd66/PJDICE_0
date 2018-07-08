@@ -4,7 +4,6 @@ public  class ConstructCardDesc : CardDesc{
     public int hp;
     
     public int movesPerTurn;
-
     public AOEtype targetAOEtype;
     public int numOfTargets;
     public int turnsToBuild;

@@ -8,21 +8,20 @@ public class GameReference {
     private List<Die> myDice;	
     private List<Die> enemyDice;
 
-    public GameReference(){
+    public GameReference() {
 
     }
 
-
-    public void rmCardFromDeck(){
-
+    public void rmCardFromDeck(Card card) {
+        myDeck.remove(card);
     }
 
-    public void rmCardFromDice(){
-
+    public void rmCardFromDice(Card card) {
+        myDice.remove(card);
     }
 
-    public void rmConstruct(){
-
+    public void rmConstruct(Construct construct) {
+        // TODO:  Implement this!
     }
 
 }

@@ -7,9 +7,13 @@ public class CardCollection {
 
 	/*the complete list of cards in game */
 	private static List<Card> CardList;
+
 	public CardCollection() {
-		
+		CardList = new List<Card>();
+		initializeCards();
 	}
 
+	private void initializeCards() {
 
+	}
 }

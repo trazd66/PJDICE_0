@@ -69,4 +69,7 @@ public abstract class Card :OnDieObj{
 		this.type = type;
 	}
 
+	public Card(){
+		this.setName("testing");
+	}
 }

@@ -44,4 +44,7 @@ public class ConstructCard : Card{
         return null;
     }
 
+    public ConstructCard():base(){
+    }
+
 }

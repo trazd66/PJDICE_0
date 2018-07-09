@@ -12,16 +12,16 @@ public class GameReference {
 
     }
 
-    public void rmCardFromDeck(Card card) {
-        myDeck.remove(card);
-    }
+    // public void rmCardFromDeck(Card card) {
+    //     myDeck.remove(card);
+    // }
 
-    public void rmCardFromDice(Card card) {
-        myDice.remove(card);
-    }
+    // public void rmCardFromDice(Card card) {
+    //     myDice.remove(card);
+    // }
 
-    public void rmConstruct(Construct construct) {
-        // TODO:  Implement this!
-    }
+    // public void rmConstruct(Construct construct) {
+    //     // TODO:  Implement this!
+    // }
 
 }
